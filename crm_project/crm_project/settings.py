@@ -36,6 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'user',
+    'crm',
 ]
 
 MIDDLEWARE = [
@@ -115,7 +118,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "crm/static/"),
 ]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'crm/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'crm')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'crm/media')
 
